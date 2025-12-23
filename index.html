@@ -5,56 +5,61 @@
 <title>Md. Abdul Mannan | Civil Engineer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
-  font-family: Arial, sans-serif;
-  background:#f4f6f8;
   margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#f2f4f8;
 }
 nav{
   background:#0b5ed7;
-  padding:12px;
+  padding:14px;
   text-align:center;
-  position:sticky;
-  top:0;
 }
 nav a{
   color:#fff;
-  margin:10px;
+  margin:12px;
   text-decoration:none;
-  font-weight:bold;
+  font-weight:600;
 }
 section{
+  max-width:1000px;
+  margin:40px auto;
   background:#fff;
-  max-width:900px;
-  margin:30px auto;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  padding:40px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
-h1,h2{
-  color:#0b5ed7;
+.center{text-align:center;}
+h1,h2{color:#0b5ed7;}
+.profile{
+  width:170px;height:170px;
+  border-radius:50%;
+  border:5px solid #0b5ed7;
+  object-fit:cover;
 }
-.icon{
-  color:#0b5ed7;
-  margin-right:8px;
-}
-ul{
-  padding-left:20px;
-}
-.social a{
+.icons a{
   font-size:26px;
   margin:10px;
   color:#0b5ed7;
 }
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  background:#0b5ed7;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  margin-top:15px;
+}
+ul{line-height:1.9}
 footer{
+  background:#0b5ed7;
+  color:#fff;
   text-align:center;
   padding:15px;
-  background:#0b5ed7;
-  color:white;
 }
 </style>
 </head>
@@ -62,63 +67,46 @@ footer{
 <body>
 
 <nav>
-  <a href="#personal">Personal</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#bnbc">BNBC Notes</a>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<!-- PERSONAL INFO -->
-<section id="personal">
-<h1><i class="fa-solid fa-user icon"></i>Md. Abdul Mannan</h1>
-<p><i class="fa-solid fa-helmet-safety icon"></i><b>Civil Engineer</b></p>
+<!-- PROFILE -->
+<section class="center" id="about">
+<img src="profile.jpg" class="profile">
+<h1>Md. Abdul Mannan</h1>
+<h3>Civil Engineer</h3>
 
-<p><i class="fa-solid fa-circle-info icon"></i>Diploma & B.Sc background with practical site experience and BNBC knowledge.</p>
-
-<h2><i class="fa-solid fa-address-card icon"></i>About</h2>
-<p>Dedicated Civil Engineer with strong site supervision skills, quality control knowledge and professional construction experience.</p>
-
-<h2><i class="fa-solid fa-briefcase icon"></i>Responsibilities</h2>
-<ul>
-<li>Site Supervision</li>
-<li>Material Checking</li>
-<li>Drawing & BOQ Understanding</li>
-<li>Quality Control</li>
-</ul>
-
-<h2><i class="fa-solid fa-location-dot icon"></i>Address</h2>
-<p>Mohammadpur, Dhaka, Bangladesh</p>
-
-<div class="social">
-<a href="https://wa.me/8801720068505" target="_blank"><i class="fab fa-whatsapp"></i></a>
-<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+<div class="icons">
+<a href="https://wa.me/8801720068505"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
 <a href="mailto:abdulbci95@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 </div>
+
+<a href="cv.pdf" class="btn" download>
+<i class="fa-solid fa-download"></i> Download CV
+</a>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
-<h2><i class="fa-solid fa-graduation-cap icon"></i>EDUCATION</h2>
-
-<p><b>B.Sc in Civil Engineering – 2025</b><br>
-B.Sc (Ongoing), Bangladesh University</p>
-
-<p><b>Diploma in Civil Engineering – 2020–2024</b><br>
-BCI Engineering Institute<br>
-CGPA: 3.40 (Out of 4)</p>
-
-<p><b>Secondary School Certificate (SSC) – 2020</b><br>
-Natapara High School (Science)<br>
-GPA: 3.17 (Out of 5)</p>
+<h2>🎓 Education</h2>
+<ul>
+<li><b>B.Sc in Civil Engineering (Ongoing)</b> – Bangladesh University (2025)</li>
+<li><b>Diploma in Civil Engineering</b> – BCI Engineering Institute (2020–2024)<br>CGPA: 3.40 / 4.00</li>
+<li><b>SSC (Science)</b> – Natapara High School (2020)<br>GPA: 3.17 / 5.00</li>
+</ul>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-<h2><i class="fa-solid fa-building icon"></i>WORK EXPERIENCE</h2>
+<h2>🏗️ Work Experience</h2>
 
 <p><b>CONCORD REAL ESTATE LTD</b><br>
-Industrial Attachment Program<br>
-19 August 2024 – 18 November 2024</p>
+Industrial Attachment (Aug–Nov 2024)</p>
 
 <p><b>Jolshri Abashon Project</b><br>
 Position: Site Engineer<br>
@@ -126,48 +114,28 @@ Position: Site Engineer<br>
 
 <p><b>BKSP Public School & College</b><br>
 06 Storied Educational Building<br>
-Location: Zirania, Savar, Dhaka<br>
-Job Status: Currently Employed</p>
-
-<h2><i class="fa-solid fa-user-check icon"></i>REFERENCES</h2>
-
-<p><b>Major Md. Kamrul Hasan (Retd)</b><br>
-Principal, BKSP Public School & College<br>
-Phone: 01769005525<br>
-Email: kamrulhasanb@gmail.com</p>
-
-<p><b>Ariful Alam</b><br>
-B.Sc in Civil Engineering (BUET)<br>
-Phone: 01914444309</p>
-
-<p><b>MD. Sayem Khan (Retd)</b><br>
-Army Sergeant (Service No: 4032313)<br>
-Phone: 01712861852</p>
+Location: Savar, Dhaka<br>
+Status: Currently Employed</p>
 </section>
 
-<!-- BNBC -->
-<section id="bnbc">
-<h2><i class="fa-solid fa-book icon"></i>BNBC STRUCTURAL NOTES</h2>
-
+<!-- SKILLS -->
+<section id="skills">
+<h2>⚙️ Skills & Responsibilities</h2>
 <ul>
-<li>Minimum column size: 10" × 10"</li>
-<li>Minimum concrete grade: M20</li>
-<li>Clear Cover:
-  <ul>
-    <li>Footing: 50mm</li>
-    <li>Column: 40mm</li>
-    <li>Beam: 25mm</li>
-  </ul>
-</li>
-<li>Lap length = 40D (Tension)</li>
-<li>Stirrups spacing:
-  <ul>
-    <li>Column: 4"–6"</li>
-    <li>Beam: 6"–8"</li>
-  </ul>
-</li>
-<li>Earthquake resistant detailing must follow BNBC</li>
+<li>Site Supervision & Quality Control</li>
+<li>BNBC Structural Knowledge</li>
+<li>Drawing & BOQ Analysis</li>
+<li>Material Checking</li>
+<li>Team Coordination</li>
 </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>📞 Contact</h2>
+<p><b>Phone:</b> 01720068505</p>
+<p><b>Email:</b> abdulbci95@gmail.com</p>
+<p><b>Address:</b> Shemoly Housing 2nd Project, House 6, Road 6, Mohammadpur, Dhaka 1207</p>
 </section>
 
 <footer>
