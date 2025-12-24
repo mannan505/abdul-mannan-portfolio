@@ -19,7 +19,16 @@ h1,h2{color:#0b5ed7;}
 footer{background:#0b5ed7;color:#fff;text-align:center;padding:15px;}
 </style>
 </head>
-
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.gallery img, .gallery video{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
 <body>
 
 <nav>
@@ -98,7 +107,31 @@ footer{background:#0b5ed7;color:#fff;text-align:center;padding:15px;}
 <img src="work1.jpg">
 <p>Video upload করতে চাইলে এখানে video tag ব্যবহার করবে।</p>
 </section>
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2>🏆 Certificates</h2>
+<div class="gallery">
+  <img src="certificates/cert1.jpg">
+  <img src="certificates/cert2.jpg">
+</div>
+</section>
 
+<!-- WORK PHOTOS -->
+<section id="works">
+<h2>🏗️ Site Work Photos</h2>
+<div class="gallery">
+  <img src="works/site1.jpg">
+  <img src="works/site2.jpg">
+</div>
+</section>
+
+<!-- WORK VIDEOS -->
+<section id="videos">
+<h2>🎥 Project Videos</h2>
+<div class="gallery">
+  <video controls src="videos/work1.mp4"></video>
+</div>
+</section>
 <footer>
 © 2025 Md. Abdul Mannan | Civil Engineer
 </footer>
