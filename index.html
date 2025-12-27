@@ -143,3 +143,69 @@ footer{background:#0b5ed7;color:#fff;text-align:center;padding:15px;}
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Upload Form</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { margin-bottom: 10px; }
+    .file-list { margin-top: 10px; }
+</style>
+</head>
+<body>
+<h2>Upload Certificates, Work Photos & Work Videos</h2>
+
+<form id="uploadForm">
+    <h3>Certificates (Max 10)</h3>
+    <input type="file" id="certificates" multiple accept=".jpg,.jpeg,.png,.pdf"><br>
+    <div id="certList" class="file-list"></div>
+
+    <h3>Work Photos (Max 10)</h3>
+    <input type="file" id="photos" multiple accept=".jpg,.jpeg,.png"><br>
+    <div id="photoList" class="file-list"></div>
+
+    <h3>Work Videos (Max 10)</h3>
+    <input type="file" id="videos" multiple accept="video/*"><br>
+    <div id="videoList" class="file-list"></div>
+
+    <button type="submit">Upload</button>
+</form>
+
+<script>
+// Function to display selected files
+function showFiles(inputId, listId, maxFiles) {
+    const input = document.getElementById(inputId);
+    const list = document.getElementById(listId);
+
+    input.addEventListener('change', () => {
+        list.innerHTML = "";
+        if(input.files.length > maxFiles){
+            alert(`You can select maximum ${maxFiles} files!`);
+            input.value = ""; // clear selection
+            return;
+        }
+        Array.from(input.files).forEach(file => {
+            const li = document.createElement('li');
+            li.textContent = file.name;
+            list.appendChild(li);
+        });
+    });
+}
+
+// Apply to all three inputs
+showFiles('certificates', 'certList', 10);
+showFiles('photos', 'photoList', 10);
+showFiles('videos', 'videoList', 10);
+
+// Prevent actual form submission (no PHP/server)
+document.getElementById('uploadForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Files selected! Without PHP/server, files will not be uploaded.');
+});
+</script>
+
+</body>
+</html>
